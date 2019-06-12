@@ -22,14 +22,14 @@ template <typename T>
 const T* PriorityQueue<T>::Top() const {
 	if (!Empty()) {
 		return storage.top();
-	} else {
-		return nullptr;
-	}
+	} 
+	
+	return nullptr;
 }
 
 template <typename T>
 void PriorityQueue<T>::Pop() {
-	if (!Epty()) {
+	if (!Empty()) {
 		storage.pop();
 	}
 }
