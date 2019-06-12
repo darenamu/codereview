@@ -8,7 +8,7 @@ public:
 	PriorityQueue();
 	~PriorityQueue();
 	bool Empty() const;
-	const T& Top() const;
+	const T* Top() const;
 	int Size();
 	void Push(const T&);
 	void Pop();
